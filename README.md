@@ -285,7 +285,7 @@ ultravox-mcp/
 
 ## 🏢 About
 
-Developed by **Mak3it AI Technologie** — Petite-Vallée, Gaspésie, Quebec, Canada 🍁
+Developed by **Mak3it AI Technologie** — Jean-Sébastien Larose, Quebec, Canada 🍁
 
 Sovereign voice AI solutions for Quebec businesses.
 
