@@ -141,7 +141,7 @@ ultravox-mcp/
 
 ## 🏢 À propos
 
-Développé par **Mak3it AI Technologie** — Petite-Vallée, Gaspésie, Québec 🍁
+Développé par **Mak3it AI Technologie** — Jean-Sébastien Larose Québec 🍁
 
 Solutions IA vocales souveraines pour les entreprises québécoises.
 
