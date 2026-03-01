@@ -2,7 +2,7 @@
 
 > 🇫🇷 **Français** | 🇬🇧 [English below](#-ultravox-mcp-server--english)
 
-Serveur MCP (Model Context Protocol) pour l'API [Ultravox](https://ultravox.ai) — compatible **Claude Desktop** (stdio) et **Claude.ai / n8n** (HTTP).
+Serveur MCP (Model Context Protocol) pour l'API [Ultravox](https://ultravox.ai) — compatible **Claude Desktop** (stdio) et **Claude.ai / n8n** (HTTP). Fonctionne facilement avec votre agent **[OpenClaw](https://openclaw.ai)**.
 
 Développé par [Mak3it AI Technologie](https://mak3it.com) — Solutions IA souveraines au Québec. 🍁
 
@@ -154,7 +154,7 @@ Solutions IA vocales souveraines pour les entreprises québécoises.
 
 > 🇬🇧 **English** | 🇫🇷 [Français ci-dessus](#-ultravox-mcp-server)
 
-MCP (Model Context Protocol) server for the [Ultravox](https://ultravox.ai) API — compatible with **Claude Desktop** (stdio) and **Claude.ai / n8n** (HTTP).
+MCP (Model Context Protocol) server for the [Ultravox](https://ultravox.ai) API — compatible with **Claude Desktop** (stdio) and **Claude.ai / n8n** (HTTP). Works seamlessly with your **[OpenClaw](https://openclaw.ai)** agent.
 
 Developed by [Mak3it AI Technologie](https://mak3it.com) — Sovereign AI solutions from Quebec, Canada. 🍁
 
