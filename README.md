@@ -1,8 +1,18 @@
 # 🎤 Ultravox MCP Server
 
+> 🇫🇷 **Français** | 🇬🇧 [English below](#-ultravox-mcp-server--english)
+
 Serveur MCP (Model Context Protocol) pour l'API [Ultravox](https://ultravox.ai) — compatible **Claude Desktop** (stdio) et **Claude.ai / n8n** (HTTP).
 
-Développé par [Mak3it AI Technologie](https://mak3it.com) — Solutions IA souveraines au Québec.
+Développé par [Mak3it AI Technologie](https://mak3it.com) — Solutions IA souveraines au Québec. 🍁
+
+---
+
+## 🎬 Démo vidéo / Video Demo
+
+[![Ultravox MCP Server - Démo par Mak3it AI](https://img.youtube.com/vi/V0v74xxrmI8/maxresdefault.jpg)](https://www.youtube.com/watch?v=V0v74xxrmI8&t=3s)
+
+▶️ [Voir la démo sur YouTube / Watch Demo on YouTube](https://www.youtube.com/watch?v=V0v74xxrmI8&t=3s)
 
 ---
 
@@ -46,6 +56,7 @@ python ultravox_mcp.py
 ```
 
 **`claude_desktop_config.json`** :
+
 ```json
 {
   "mcpServers": {
@@ -135,3 +146,147 @@ Développé par **Mak3it AI Technologie** — Petite-Vallée, Gaspésie, Québec
 Solutions IA vocales souveraines pour les entreprises québécoises.
 
 **Ralf** — L'agent vocal intelligent fait au Québec.
+
+---
+---
+
+# 🎤 Ultravox MCP Server — English
+
+> 🇬🇧 **English** | 🇫🇷 [Français ci-dessus](#-ultravox-mcp-server)
+
+MCP (Model Context Protocol) server for the [Ultravox](https://ultravox.ai) API — compatible with **Claude Desktop** (stdio) and **Claude.ai / n8n** (HTTP).
+
+Developed by [Mak3it AI Technologie](https://mak3it.com) — Sovereign AI solutions from Quebec, Canada. 🍁
+
+---
+
+## ✨ Features
+
+- ✅ **Dual transport**: stdio (local) + SSE/streamable-http (remote)
+- 📞 **Calls**: list, detail, transcribe, record, delete
+- 🤖 **Agents**: list, configure, update system prompt, delete
+- 🎙️ **Voices**: list all available voices
+- 🧠 **Models**: list available LLMs
+- 🔧 **Tools**: manage custom agent tools
+- 🪝 **Webhooks**: create, list, delete
+- 📊 **Usage**: usage statistics
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+
+```bash
+pip install fastmcp httpx python-dotenv
+```
+
+### Configuration
+
+Create a `.env` file in the same directory:
+
+```env
+ULTRAVOX_API_KEY=your_ultravox_api_key
+```
+
+---
+
+## 🖥️ Usage
+
+### stdio Mode — Claude Desktop
+
+```bash
+python ultravox_mcp.py
+```
+
+**`claude_desktop_config.json`**:
+
+```json
+{
+  "mcpServers": {
+    "ultravox": {
+      "command": "python",
+      "args": ["C:\\path\\to\\ultravox_mcp.py"],
+      "env": {
+        "ULTRAVOX_API_KEY": "your_api_key"
+      }
+    }
+  }
+}
+```
+
+### SSE Mode — Claude.ai / n8n / Web
+
+```bash
+python ultravox_mcp.py --transport sse --port 8000
+```
+
+Connection URL: `http://your-server:8000/sse`
+
+### streamable-http Mode — Modern Standard
+
+```bash
+python ultravox_mcp.py --transport streamable-http --port 8000
+```
+
+Connection URL: `http://your-server:8000/mcp`
+
+### Via environment variables
+
+```bash
+MCP_TRANSPORT=sse MCP_PORT=8000 ULTRAVOX_API_KEY=xxx python ultravox_mcp.py
+```
+
+---
+
+## 🛠️ Available MCP Tools (22 tools)
+
+| Category | Tool | Description |
+|----------|------|-------------|
+| Account | `get_account_info` | Account information |
+| Calls | `list_calls` | List all calls |
+| Calls | `get_call` | Call details |
+| Calls | `get_call_messages` | Full transcript |
+| Calls | `get_call_recording` | Audio recording URL |
+| Calls | `get_call_stages` | Call stages |
+| Calls | `get_call_tools` | Tools used in a call |
+| Calls | `get_call_usage` | Usage statistics |
+| Calls | `delete_call` | Delete a call |
+| Calls | `get_deleted_calls` | Deleted calls |
+| Agents | `list_agents` | List agents |
+| Agents | `get_agent` | Agent details |
+| Agents | `list_agent_calls` | Agent call history |
+| Agents | `update_agent_prompt` | Update system prompt |
+| Agents | `delete_agent` | Delete an agent |
+| Voices | `list_voices` | Available voices |
+| Voices | `get_voice` | Voice details |
+| Models | `list_models` | Available LLMs |
+| Tools | `list_tools` | Custom tools |
+| Tools | `get_tool` | Tool details |
+| Webhooks | `list_webhooks` | List webhooks |
+| Webhooks | `get_webhook` | Webhook details |
+| Webhooks | `create_webhook` | Create a webhook |
+| Webhooks | `delete_webhook` | Delete a webhook |
+| API | `get_open_api_schema` | Ultravox OpenAPI schema |
+
+---
+
+## 📦 Project Structure
+
+```
+ultravox-mcp/
+├── ultravox_mcp.py    # Main MCP server
+├── .env               # API key (do not commit!)
+├── .env.example       # Configuration example
+└── README.md
+```
+
+---
+
+## 🏢 About
+
+Developed by **Mak3it AI Technologie** — Petite-Vallée, Gaspésie, Quebec, Canada 🍁
+
+Sovereign voice AI solutions for Quebec businesses.
+
+**Ralf** — The intelligent voice agent made in Quebec.
