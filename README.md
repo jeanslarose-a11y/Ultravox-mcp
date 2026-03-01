@@ -143,11 +143,6 @@ ultravox-mcp/
 
 Développé par **Mak3it AI Technologie** — Jean-Sébastien Larose Québec 🍁
 
-Solutions IA vocales souveraines pour les entreprises québécoises.
-
-**Ralf** — L'agent vocal intelligent fait au Québec.
-
----
 ---
 
 # 🎤 Ultravox MCP Server — English
@@ -287,6 +282,3 @@ ultravox-mcp/
 
 Developed by **Mak3it AI Technologie** — Jean-Sébastien Larose, Quebec, Canada 🍁
 
-Sovereign voice AI solutions for Quebec businesses.
-
-**Ralf** — The intelligent voice agent made in Quebec.
